@@ -1,8 +1,12 @@
+@import url(https://fontmeme.com/permalink/220913/b6a3b58d3e70e67fdbc841075fb35874.png);
+
+
 .App {
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: auto;
+  font-family: "Pokemon Hollow";
 }
 
 .App-logo {
