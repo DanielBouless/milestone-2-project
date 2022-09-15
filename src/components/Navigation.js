@@ -18,7 +18,7 @@ function Navigation() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto ">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">PC/Storage</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown">
