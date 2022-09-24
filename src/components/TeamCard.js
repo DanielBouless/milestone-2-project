@@ -25,8 +25,6 @@ function TeamCard(props) {
     fetchPokemon();
   }, []);
 
-  console.log(pokeData);
-
   const renderPokemon = pokeData.map((pokemon, i) => {
     return (
       <Card className="text-center mx-auto" key={i} data={pokemon}>
