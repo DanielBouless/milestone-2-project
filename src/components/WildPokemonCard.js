@@ -4,8 +4,10 @@ import Card from "react-bootstrap/Card";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Stack from "react-bootstrap/Stack";
 
+
 function WildPokemonCard(props) {
-    function handleFetchData() {
+    
+function handleFetchData() {
         props.fetchData(props.apiURL);
     }
     return (
@@ -26,11 +28,11 @@ function WildPokemonCard(props) {
                     <Stack gap={3} direction="horizontal">
                         <FleeButton
                             setId={props.setId}
-                            handleFetchData={props.handleFetchData}
+                            handleFetchData={handleFetchData}
                         />
                         <CatchButton
                             setId={props.setId}
-                            handleFetchData={props.handleFetchData}
+                            handleFetchData={handleFetchData}
                         />
                     </Stack>
                 </ButtonGroup>
