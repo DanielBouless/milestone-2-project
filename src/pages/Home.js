@@ -7,21 +7,21 @@ import { useState, useEffect } from "react";
 import { render } from "@testing-library/react";
 
 function Home(props) {
-  return (
-    <div>
-      <Container>
-        <Stack gap={3}>
-          <Navigation />
-          <WildPokemonCard
-            data={props.data}
-            handleFetchData={props.handleFetchData}
-            setId={props.setId}
-            handleCatch={props.handleCatch}
-          />
-          <TeamCard data={props.data} getAllOnTeam={props.getAllOnTeam} />
-        </Stack>
-      </Container>
-    </div>
-  );
+    return (
+        <div>
+            <Container>
+                <Stack gap={3}>
+                    <Navigation />
+                    <WildPokemonCard
+                        data={props.data}
+                        apiURL={props.apiURl}
+                        setId={props.setId}
+                        setData={props.setData}
+                    />
+                    <TeamCard setData={props.setData} data={props.data} />
+                </Stack>
+            </Container>
+        </div>
+    );
 }
 export default Home;
