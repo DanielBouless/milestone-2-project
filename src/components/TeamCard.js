@@ -38,7 +38,6 @@ function TeamCard(props) {
         fetchPokemon();
     }, []);
 
-    console.log(pokeData);
 
     const renderPokemon = pokeData.map((pokemon, i) => {
         return (
