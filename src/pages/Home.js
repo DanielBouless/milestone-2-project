@@ -6,6 +6,7 @@ import Stack from "react-bootstrap/Stack";
 
 
 function Home(props) {
+<<<<<<< HEAD
     return (
         <div>
             <Container>
@@ -23,5 +24,23 @@ function Home(props) {
             </Container>
         </div>
     );
+=======
+  return (
+    <div>
+      <Container>
+        <Stack gap={3}>
+          <Navigation />
+          <WildPokemonCard
+            data={props.data}
+            handleFetchData={props.handleFetchData}
+            setId={props.setId}
+            handleCatch={props.handleCatch}
+          />
+          <TeamCard data={props.data} getAllOnTeam={props.getAllOnTeam} />
+        </Stack>
+      </Container>
+    </div>
+  );
+>>>>>>> parent of f4ecc7e (ready for merge, all prop-drilling fixed)
 }
 export default Home;
