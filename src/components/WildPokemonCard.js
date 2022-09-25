@@ -6,41 +6,7 @@ import Stack from "react-bootstrap/Stack";
 
 
 function WildPokemonCard(props) {
-<<<<<<< HEAD
-    
-function handleFetchData() {
-        props.fetchData(props.apiURL);
-    }
-    return (
-        <Card
-            className="text-center mx-auto"
-            border="primary"
-            style={{ width: "30rem" }}
-        >
-            <Card.Img
-                variant="top"
-                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.data.id}.png`}
-                alt="Wild Poke Img"
-                style={{ width: "30rem" }}
-            />
-            <Card.Title>{props.data.name}</Card.Title>
-            <Card.Body>
-                <ButtonGroup>
-                    <Stack gap={3} direction="horizontal">
-                        <FleeButton
-                            setId={props.setId}
-                            handleFetchData={handleFetchData}
-                        />
-                        <CatchButton
-                            setId={props.setId}
-                            handleFetchData={handleFetchData}
-                        />
-                    </Stack>
-                </ButtonGroup>
-            </Card.Body>
-        </Card>
-    );
-=======
+
   return (
     <Card
       className="text-center mx-auto"
@@ -67,7 +33,7 @@ function handleFetchData() {
       </Card.Body>
     </Card>
   );
->>>>>>> parent of f4ecc7e (ready for merge, all prop-drilling fixed)
+
 }
 
 export default WildPokemonCard;
